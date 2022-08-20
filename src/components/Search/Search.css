@@ -1,0 +1,30 @@
+.searchContent {
+    display: flex;
+    justify-content: center;
+    background-color: #080808;
+    grid-area: main;
+}
+
+.span-border {
+    width: 10.4rem;
+    position: relative;
+    background-color: #080808;
+    border-top: 45px solid #181818;;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.search-input {
+    position: absolute;
+    width: 10rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    font-size: 20px;
+    border: 3px solid #181818;;
+    border-top: none;
+}
+
+.search-input:focus {
+    margin-top: 3px;
+    border-top: none;
+}

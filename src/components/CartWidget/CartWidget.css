@@ -1,0 +1,30 @@
+.cartContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 1rem;
+    background-color: #0c0c0c;
+    width: 2.5rem;
+    height: 1.5rem;
+    padding: .1rem;
+    border: 1px outset #000;
+    border-radius: 10px;
+}
+
+.cartContent:hover {
+    transform: scale(1.05);
+}
+
+.cart {
+    display: block;
+    background-color: #0c0c0c;
+    font-size: 28px;
+}
+
+.cartCant {
+    display: block;
+    font-size: 22px;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 3px;
+}

@@ -1,28 +1,20 @@
 import './App.css';
-import logo from './img/logo.png';
+import React from 'react'
+import Navbar from './components/Navbar/Navbar';
+import Search from './components/Search/Search';
+import { ItemListContainer } from './components/ItemListContainer/ItemList';
 
 function App() {
   return (
     <div className='container'>
-      <header className='header'>
-        <nav className="nav-bar">
-          <img className='logo' src={logo} alt="logo" />
-          <div>
-            <ul className="seccion">
-              <li className='secc-list'>Productos</li>
-              <li className='secc-list'>Combos</li>
-              <li className='secc-list'>Mi cuenta</li>
-              <li className='secc-list'>Ayuda</li>
-            </ul>
-          </div>
-          <div>
-            <input className='search-input' type="search" placeholder='busqueda' />
-            <button className='search-button'>buscar</button>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
+      <main className='mainContainer'>
+        <Search searchProd="Buscar Producto" />
+        {/* <ItemListContainer titulo= "Items List Containers"/> */}
+        <ItemListContainer titulo="Item List Container" />
+      </main>
     </div>
-  );
+  )
 }
 
 export default App;

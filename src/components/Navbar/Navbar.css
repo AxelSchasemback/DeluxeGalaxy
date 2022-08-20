@@ -1,0 +1,53 @@
+
+.containerNav {
+    grid-area: nav;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    background-color: #0c0c0c;
+    border-bottom: 3px outset rgb(1, 155, 1);
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: #0c0c0c;
+    font-family: "Counter-Strike";
+    height: 1.5rem;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    letter-spacing: 3px;
+    transition: .3s all ease;
+    cursor: pointer;
+    text-shadow: #ff0000 0 0, #00ffff 0 0;
+}
+
+.logo:hover {
+    text-shadow: #ff0000 -3px 0, #00ffff 3px 0;
+}
+
+.seccion {
+    display: flex;
+    width: 25rem;
+    justify-content: space-around;
+    background-color: #0c0c0c;
+}
+
+.secc-list {
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #0c0c0c;
+    width: 4.5rem;
+    height: 1.4rem;
+    padding: 0.2rem;
+    /* border: 3px outset #282222; */
+}
+
+.secc-list:hover {
+    background-image: radial-gradient(#000000, #00000033, #0c0c0c);
+    transform: skew(355deg) scale(1.05);
+}
+
