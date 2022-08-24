@@ -3,6 +3,7 @@ import './Navbar.css';
 // import Search from '../Search/Search';
 import { CartWidget } from '../CartWidget/CartWidget';
 
+
 function Navbar() {
   return (
       <div className='containerNav'>

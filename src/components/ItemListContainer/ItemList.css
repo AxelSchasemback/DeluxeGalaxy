@@ -1,5 +1,48 @@
 .title {
     text-align: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: #080808;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.allCards {
+    display: flex;
+    background-color: #080808;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #080808;
+    margin: 2rem;
+    border: 2px outset #019b01;
+    border-radius: 10px;
+    width: 10rem;
+    height: 15rem;
+    align-items: center;
+    transition: .3s all;
+    justify-content: space-around;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    background-image: radial-gradient(#00000000, #00000000, #00000000, #18181800, #86ff010d);
+}
+
+.imgCard {
+    width: 5rem;
+    height: 5rem;
+    background-color: #080808;
+}
+
+.titleCard {
+    background-color: #080808;
+}
+
+.priceCard {
     background-color: #080808;
 }

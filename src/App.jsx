@@ -10,8 +10,12 @@ function App() {
       <Navbar />
       <main className='mainContainer'>
         <Search searchProd="Buscar Producto" />
-        {/* <ItemListContainer titulo= "Items List Containers"/> */}
-        <ItemListContainer titulo="Item List Container" />
+        <ItemListContainer
+          title="Item List Container"
+          img="https://celularapagos.com/wp-content/uploads/2022/04/moto-G71-azul.png"
+          titleCard="Moto G71"
+          price="$92000"
+        />
       </main>
     </div>
   )

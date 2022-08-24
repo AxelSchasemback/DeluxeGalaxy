@@ -2,7 +2,6 @@ import React from 'react'
 import "./Search.css"
 
 function Search ({searchProd}) {
-    console.log(searchProd)
     return (
         <div className='searchContent'>
             <span className="span-border"></span>
