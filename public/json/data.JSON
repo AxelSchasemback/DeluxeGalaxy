@@ -1,0 +1,133 @@
+{
+    "productos": [
+        {
+            "id": 0,
+            "marca": "Motorola",
+            "nombre": "G71",
+            "precio": 79999,
+            "stock": 12,
+            "img": "https://celularapagos.com/wp-content/uploads/2022/04/moto-G71-azul.png"
+        },
+        {
+            "id": 1,
+            "marca": "Motorola",
+            "nombre": "G60",
+            "precio": 65999,
+            "stock": 10,
+            "img": "https://cbff-teco-strapi-cms-pro.s3.amazonaws.com/Moto_G60s_Frente_min_39c217a159.png"
+        },
+        {
+            "id": 2,
+            "marca": "Motorola",
+            "nombre": "G22",
+            "precio": 50000,
+            "stock": 15,
+            "img": "https://tienda.movistar.com.ar/media/catalog/product/cache/29ccbb5c02aec1862b4f5a57a55d0f2f/g/2/g22-negro-frente_2.png"
+        },
+        {
+            "id": 3,
+            "marca": "motorola",
+            "nombre": "G51",
+            "precio": 60000,
+            "stock": 12,
+            "img": "https://cbff-teco-strapi-cms-pro.s3.amazonaws.com/Moto_G51_Azul_frente_min_f97b2b7415.png"
+        },
+        {
+            "id": 4,
+            "marca": "Samsung",
+            "nombre": "A32",
+            "precio": 79000,
+            "stock": 10,
+            "img": "https://tienda.movistar.com.ar/media/catalog/product/cache/29ccbb5c02aec1862b4f5a57a55d0f2f/s/a/samsung_galaxy_a32_negro_frente_1.png"
+        },
+        {
+            "id": 5,
+            "marca": "Samsung",
+            "nombre": "A52",
+            "precio": 120000,
+            "stock": 8,
+            "img": "https://bienestarconfort.com.ar/wp-content/uploads/2021/07/samsung-a-52.png"
+        },
+        {
+            "id": 6,
+            "marca": "Samsung",
+            "nombre": "A22 5G",
+            "precio": 75000,
+            "stock": 11,
+            "img": "https://tienda.movistar.com.ar/media/catalog/product/cache/29ccbb5c02aec1862b4f5a57a55d0f2f/a/2/a22-gris-frente.png"
+        },
+        {
+            "id": 7,
+            "marca": "Samsung",
+            "nombre": "A03",
+            "precio": 36400,
+            "stock": 20,
+            "img": "https://tienda.movistar.com.ar/media/catalog/product/cache/29ccbb5c02aec1862b4f5a57a55d0f2f/a/0/a03-64-negro-frente_1_1.png"
+        },
+        {
+            "id": 8,
+            "marca": "Huawei",
+            "nombre": "Nova 5T",
+            "precio": 68000,
+            "stock": 13,
+            "img": "https://globalmarketingoutlet.com/wp-content/uploads/2022/05/Huawei-Nova-5T.png"
+        },
+        {
+            "id": 9,
+            "marca": "Huawei",
+            "nombre": "Nova 8i",
+            "precio": 83000,
+            "stock": 10,
+            "img": "https://img01.huaweifile.com/sg/ms/cl/pms/uomcdn/CL_HW_B2C/pms/202204/gbom/6941487234073/428_428_5E446F837F03628773E381C345A9E1F2mp.png"
+        },
+        {
+            "id": 10,
+            "marca": "Apple",
+            "nombre": "Iphone 13",
+            "precio": 442500,
+            "stock": 4,
+            "img": "https://www.qloud.ar/SITES/ryr/fotos/20900-0.jpg"
+        },
+        {
+            "id": 11,
+            "marca": "Apple",
+            "nombre": "Iphone 12 PRO",
+            "precio": 461250,
+            "stock": 5,
+            "img": "https://www.qloud.ar/SITES/ryr/fotos/20901-0.jpg"
+        },
+        {
+            "id": 12,
+            "marca": "Xiaomi",
+            "nombre": "Redmi Note 11",
+            "precio": 35000,
+            "stock": 10,
+            "img": "https://delitech.ar/wp-content/uploads/2022/04/redminote11s.png"
+        },
+        {
+            "id": 13,
+            "marca": "Xiaomi",
+            "nombre": "Redmi Note 9T",
+            "precio": 48000,
+            "stock": 10,
+            "img": "https://i0.wp.com/shop.litecorp.com.ar/wp-content/uploads/2021/11/image-removebg-preview-69.png?fit=459%2C544&ssl=1"
+        },
+        {
+            "id": 14,
+            "marca": "TCL",
+            "nombre": "20E",
+            "precio": 55000,
+            "stock": 12,
+            "img": "https://bienestarconfort.com.ar/wp-content/uploads/2022/08/celular-tcl.png"
+        },
+        {
+            "id": 15,
+            "marca": "TCL",
+            "nombre": "10 SE",
+            "precio": 45000,
+            "stock": 10,
+            "img": "https://castillo.com.ar/Image/0/500_500-12382336-1.png"
+        }
+    ]
+}
+

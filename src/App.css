@@ -24,3 +24,10 @@
     grid-area: main;
 }
 
+.divContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #080808;
+    justify-content: center;
+}
