@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'
 import Navbar from './components/Navbar/Navbar';
 import Search from './components/Search/Search';
-import {ItemListContainer} from './components/ItemListContainer/ItemList';
+import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
