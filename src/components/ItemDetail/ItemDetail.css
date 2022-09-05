@@ -1,0 +1,86 @@
+.containerDetail {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tituloDetail {
+    background-color: #080808;
+    font-size: 32px;
+}
+
+.subContainer {
+    background-color: #080808;
+    margin-top: 2rem;
+    width: 52rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenDetail {
+    background-color: #080808;
+    width: 20rem;
+    height: 20rem;
+    transition: all 1s;
+}
+
+.imagenDetail:hover {
+    transform: scale(1.1);
+}
+
+.containerDescripcion {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 28rem;
+    justify-content: flex-start;
+}
+
+.tituloDetalle {
+    background-color: #080808;
+}
+
+.detalle {
+    display: block;
+    margin: 2rem 0rem;
+    background-color: #080808;
+    margin-top: 2rem;
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+
+.buy {
+    background-color: #080808;
+    display: flex;
+    width: 20rem;
+    height: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botonComprar {
+    background-color: #080808;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    transition: .4s all ease;
+    border: 2px outset #101010;
+}
+
+.botonComprar:hover {
+    transform: scale(1.05);
+    border: 2px inset #101010;
+}
+
+.precioDetalle {
+    font-size: 32px;
+    background-color: #080808;
+    border: 2px inset #080808;
+    padding: .4rem;
+    border-radius: 10px;
+    transition: all .4s;
+}

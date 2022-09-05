@@ -52,3 +52,6 @@
     transform: skew(355deg) scale(1.05);
 }
 
+.linkHome {
+    text-decoration: none;
+}

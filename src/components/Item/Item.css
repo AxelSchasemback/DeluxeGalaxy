@@ -23,10 +23,10 @@
     border: 2px outset #019b01;
     border-radius: 10px;
     width: 10rem;
-    height: 15rem;
+    height: 18rem;
     align-items: center;
     transition: .3s all;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .card:hover {
@@ -34,14 +34,48 @@
     background-image: radial-gradient(#00000000, #00000000, #00000000, #18181800, #86ff010d);
 }
 
+.link {
+    height: 9rem;
+    display: flex;
+    background-color: #080808;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    transition: all .6s;
+}
+
+.link:hover {
+    transform: scale(1.04);
+}
+
 .imgCard {
     width: 5rem;
     height: 5rem;
     background-color: #080808;
+    transition: all .5s;
+}
+
+.imgCard:hover {
+    transform: scale(1.05);
+}
+
+.verProducto {
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    transition: .2s all ease;
+    border: 2px outset #101010;
+}
+
+.verProducto:hover {
+    transform: scale(1.05);
+    border: 2px inset #101010;
 }
 
 .titleCard {
     background-color: #080808;
+    font-size: 22px
 }
 
 .priceCard {

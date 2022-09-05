@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "... main main ..."
+        "footer footer footer footer";
+}
+
+.mainContainerDetail {
+    display: flex;
+    flex-direction: column;
+    background-color: #080808;
+    height: 45rem;
+    grid-area: main;
+}
+
+.divContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #080808;
+}

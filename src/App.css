@@ -6,28 +6,3 @@
     background-color: #101010;
     color: white;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-areas:
-        "nav nav nav nav"
-        "... main main ..."
-        "footer footer footer footer";
-}
-
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #080808;
-    height: 100vh;
-    grid-area: main;
-}
-
-.divContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #080808;
-    justify-content: center;
-}

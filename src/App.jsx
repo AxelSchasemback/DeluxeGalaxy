@@ -1,19 +1,21 @@
 import './App.css';
 import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
-import Search from './components/Search/Search';
-import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
   return (
     <div className='container'>
-      <Navbar />
-      <main className='mainContainer'>
-        <Search searchProd="Buscar Producto" />
-        <div className='divContent'>
-        <ItemListContainer/>
-        </div>
-      </main>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/Home" element={<ItemListContainer />} />
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/detail/:id" element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
