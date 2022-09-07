@@ -9,7 +9,7 @@ function Navbar() {
       <div className='containerNav'>
       <header className='header'>
         <nav className="nav-bar">
-          <Link className='linkHome' to="/home">
+          <Link className='linkHome' to="/Home">
           <span className="logo">Deluxe.Arg</span>
           </Link>
           <div>

@@ -15,6 +15,12 @@
     grid-area: main;
 }
 
+.titleProduct {
+    text-align: center;
+    background-color: #080808;
+    margin-top: 2rem;
+}
+
 .divContent {
     display: flex;
     flex-direction: row;

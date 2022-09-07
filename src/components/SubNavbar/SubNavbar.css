@@ -1,0 +1,32 @@
+.category {
+    display: flex;
+    background-color: #080808;
+    height: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+}
+
+.category a span {
+    background-color: #080808;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    height: 1rem;
+    padding: 0.2rem;
+    transition: all .5s;
+}
+
+.category span:hover {
+    transform: skew(5deg) scale(1.05);
+}
+
+.category a {
+    text-decoration: none;
+    transition: all .5s;
+    border: none;
+}
+
+.category a:hover {
+    transform: skew(5deg) scale(1.05);
+}
