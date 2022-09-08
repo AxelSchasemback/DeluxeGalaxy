@@ -24,6 +24,7 @@ export const ItemListContainer = () => {
 
     const getCategory = () => new Promise((res, rej) => {
         setProductoCategoria(productos.filter((buscar) => buscar.marca === marca))
+
     })
 
     useEffect(() => {
@@ -46,7 +47,7 @@ export const ItemListContainer = () => {
     return (
 
         <main className='mainContainer'>
-            <Search searchProd="Buscar Producto" />
+            <Search product={productos} />
             <h1 className='titleProduct'>Productos</h1>
             <div className='divContent'>
                 <SubNavbar categoria={productos} />

@@ -1,5 +1,6 @@
 .itemCount {
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .itemCount button {
@@ -38,16 +39,34 @@
     background-color: #080808;
 }
 
-.addCart {
-    margin-top: .5rem;
+.buy {
+    background-color: #080808;
+    display: flex;
+    width: 20rem;
     height: 2rem;
-    width: 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botonComprar {
+    background-color: #080808;
+    height: 2rem;
+    width: 7rem;
     border-radius: 10px;
-    transition: .2s all ease;
+    transition: .4s all ease;
     border: 2px outset #101010;
 }
 
-.addCart:hover {
+.botonComprar:hover {
     transform: scale(1.05);
     border: 2px inset #101010;
+}
+
+.precioDetalle {
+    font-size: 32px;
+    background-color: #080808;
+    border: 2px inset #080808;
+    padding: .4rem;
+    border-radius: 10px;
+    transition: all .4s;
 }

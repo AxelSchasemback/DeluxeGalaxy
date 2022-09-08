@@ -1,17 +1,17 @@
 import { React, useState } from 'react'
 import './ItemCount.css'
 
-export const ItemCount = ({ stock, addCart }) => {
+export const ItemCount = ({ stock, precio, boton }) => {
     const [count, setCount] = useState(1)
 
     const addCant = () => {
-        if ( count < stock) { setCount( count + 1)}
+        if (count < stock) { setCount(count + 1) }
     }
 
     const remCant = () => {
         if (count > 1) { setCount(count - 1) }
     }
-    
+
 
     return (
         <div className='itemCount-container'>
@@ -25,9 +25,10 @@ export const ItemCount = ({ stock, addCart }) => {
                     +
                 </button>
             </div>
-            <button className='addCart' onClick={() => addCart(count)}>
-                Add Cart
-            </button>
+            <div className='buy'>
+                <button className='botonComprar' onClick={(() => boton())}> Comprar </button>
+                <span className='precioDetalle'>${precio}</span>
+            </div>
         </div>
     )
 }
