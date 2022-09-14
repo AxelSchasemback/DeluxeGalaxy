@@ -1,17 +1,26 @@
 import { React, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
+import { useCartContext } from '../../context/CartContext'
 import "./ItemDetail.css"
 
 export const ItemDetail = ({ producto }) => {
     const { nombre, marca, precio, descripcion, img, stock } = producto
 
-    const [cart, setCart] = useState(false)
-
-    const onAdd = () => {
-        setCart(true)
+    const [goCart, setGoCart] = useState(false)
+    
+    
+    
+    const { addItem } = useCartContext();
+    
+    
+    const onAdd = (quantity) => {
+        setGoCart(true)
+        addItem(marca, nombre, producto.id, quantity )
     }
-
+    
+    
+    
     return (
         <div className='containerDetail'>
             <h1 className='tituloDetail'>Estas Viendo {marca} {nombre}</h1>
@@ -20,15 +29,15 @@ export const ItemDetail = ({ producto }) => {
                 <div className='containerDescripcion'>
                     <p className='tituloDetalle'>Detalles Del Producto</p>
                     <p className='detalle'>{descripcion}</p>
-                    {cart ? (
+                    {goCart ? (
                         <div className='buy'>
                             <Link className='linkCart' to='/cart'>
-                            <button className='botonComprar'>Ir al Carrito</button>
+                                <button className='botonComprar'>Ir al Carrito</button>
                             </Link>
                             <span className='precioDetalle'>${precio}</span>
                         </div>
                     ) : (
-                        <ItemCount stock={stock} precio={precio} boton={onAdd}/>
+                        <ItemCount stock={stock} precio={precio} boton={onAdd} />
                     )}
                 </div>
             </div>

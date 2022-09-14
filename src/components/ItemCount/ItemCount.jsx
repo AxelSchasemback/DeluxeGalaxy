@@ -4,6 +4,7 @@ import './ItemCount.css'
 export const ItemCount = ({ stock, precio, boton }) => {
     const [count, setCount] = useState(1)
 
+
     const addCant = () => {
         if (count < stock) { setCount(count + 1) }
     }
@@ -26,7 +27,7 @@ export const ItemCount = ({ stock, precio, boton }) => {
                 </button>
             </div>
             <div className='buy'>
-                <button className='botonComprar' onClick={(() => boton())}> Comprar </button>
+                <button className='botonComprar' onClick={(() => boton(count))}> Comprar </button>
                 <span className='precioDetalle'>${precio}</span>
             </div>
         </div>
