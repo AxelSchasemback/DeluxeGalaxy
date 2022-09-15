@@ -1,21 +1,25 @@
 import React from 'react'
+import './ItemCart.css'
 
-export const ItemCart = ({ producto }) => {
+export const ItemCart = ({ productos }) => {
 
-   const { nombre, marca, cantidad} = producto
+   const { name, marca, cant, id, img, precio} = productos
 
-  return (
-    <div>
-        <h1>tu Carrito</h1>
-        <table>
-            <tr>
-                <th><h2>{marca} {nombre}</h2></th>
-            </tr>
-            <tr>
-                <td></td>
-                <td>{cantidad}</td>
-            </tr>
-        </table>
-    </div>
-  )
+   console.log(productos)
+
+   return (
+    < div className='cardContent' key={id}>
+        <div className='allCards'>
+            <div className='card'>
+                <img src={img} alt="imagenPrueba" className="imgCard" />
+                <button className='verProducto'>quitar producto</button>
+                <div className='namePrice'>
+                <span className='titleCard'>{marca} {name} </span>
+                <span className="priceCard">${precio}</span>
+                <span className='cantidad'>{cant}</span>
+                </div>
+            </div>
+        </div>
+    </div >
+)
 }

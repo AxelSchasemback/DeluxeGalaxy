@@ -8,12 +8,14 @@ const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
 
-    const addItem = (marca, name, id, quantity) => {
+    const addItem = (marca, name, id, quantity, img, precio) => {
         if (isInCart(id)) {
-            setCart([...cart, { marca: marca, name: name, id: id, cant: quantity }])
+            const findCart = cart.find(producto => producto.id === id)
+                findCart.cant = findCart.cant + quantity
+                setCart([...cart])
         }
         else {
-            setCart([{ marca: marca, name: name, id: id, cant: quantity }])
+            setCart([...cart, { marca: marca, name: name, id: id, cant: quantity, img: img, precio: precio }])
         }
     }
 
@@ -29,6 +31,7 @@ const CartProvider = ({ children }) => {
 
     return (
         <CartContext.Provider value={{
+            cart,
             clear,
             isInCart,
             removeItem,
