@@ -21,3 +21,98 @@
     flex-wrap: wrap;
     background-color: #080808;
 }
+
+.title {
+    text-align: center;
+    padding-top: 2rem;
+    background-color: #080808;
+}
+
+.cardContentCart {
+    display: flex;
+    align-items: center;
+    background-color: #080808;
+    width: 100%;
+    flex-direction: column;
+}
+
+.allCardsCart {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    background-color: #080808;
+}
+
+.tableHead {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.tableHead tr {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #080808;
+}
+
+.tableHead th {
+    border: 2px outset #019b01;
+    background-color: #080808;
+    border-radius: 5px;
+}
+
+.thProducto {
+    width: 20rem;
+}
+
+.thPrecio {
+    width: 5rem;
+}
+
+.thCant {
+    width: 5rem;
+}
+
+.thSubTotal {
+    width: 8rem;
+}
+
+.clearCart {
+    display: block;
+    background-color: #080808;
+    border: 2px outset #080808;
+    padding: .4rem;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.clearCart:hover {
+    transform: scale(1.06);
+}
+
+.buyCart {
+    display: block;
+    background-color: #080808;
+    border: 2px outset #080808;
+    padding: .4rem;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.buyCart:hover {
+    transform: scale(1.06);
+}
+
+.buttonContext {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background-color: #080808;
+}
+
+.cartVacio {
+    text-align: center;
+    background-color: #080808;
+    margin-top: 2rem;
+}
+
