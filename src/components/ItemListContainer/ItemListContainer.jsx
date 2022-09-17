@@ -2,12 +2,17 @@ import { React, useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { ItemList } from '../ItemList/ItemList'
 import Search from '../Search/Search';
+import { Loading } from '../Loading/Loading';
 import './ItemListContainer.css'
 import { SubNavbar } from '../SubNavbar/SubNavbar';
 
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [productoCategoria, setProductoCategoria] = useState([])
+    const [load, setLoad] = useState(true)
+    setTimeout(() => setLoad(false), 2000)
+
+
     const { marca } = useParams()
 
     useEffect(() => {
@@ -48,11 +53,15 @@ export const ItemListContainer = () => {
 
         <main className='mainContainer'>
             <Search product={productos} />
-            <h1 className='titleProduct'>Productos</h1>
-            <div className='divContent'>
-                <SubNavbar categoria={productos} />
-             {marca ? <ItemList list={productoCategoria}/> : <ItemList list={productos} />}   
-            </div>
+            {load ? <Loading /> :
+                <>
+                    <h1 className='titleProduct'>Productos</h1>
+                    <div className='divContent'>
+                        <SubNavbar categoria={productos} />
+                        {marca ? <ItemList list={productoCategoria} /> : <ItemList list={productos} />}
+                    </div>
+                </>
+            }
         </main>
     )
 }

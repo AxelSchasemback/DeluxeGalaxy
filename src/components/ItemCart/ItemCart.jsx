@@ -6,7 +6,9 @@ export const ItemCart = ({ productos }) => {
 
     const { name, marca, cant, id, img, precio } = productos
 
-    const { removeItem, totalProducts } = useCartContext()
+    const { removeItem } = useCartContext()
+
+    const totalSuma = precio * cant
 
     return (
         <tr className='cardCart' key={id}>
@@ -22,15 +24,10 @@ export const ItemCart = ({ productos }) => {
                     <span className='cantidad'>{cant}</span>
                 </td>
                 <td className='tdSubTotal'>
-                    <span className='subTotal'> $99999</span>
+                    <span className='subTotal'> ${totalSuma}</span>
                 </td>
                 <button className='quitarProducto show' onClick={(() => removeItem(id))}>x</button>
             </div>
-            <td className='totalCart'>
-                <p className='totalTitle'>
-                    Total: ${totalProducts()}
-                </p>
-            </td>
         </tr>
     )
 }

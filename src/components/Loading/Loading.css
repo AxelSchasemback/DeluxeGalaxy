@@ -1,0 +1,32 @@
+.contLoad {
+    display: flex;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    border-radius: 10rem;
+    top: 20%;
+    background: linear-gradient(353deg, #08080800, #08080800, #019b01, #019b01, #019b01, #019b01, #08080800, #08080800);
+    animation: rotate 1.2s linear infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto;
+    border-radius: 20rem;
+    background-color: #080808;
+    animation: rotate, 1.2s linear infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: scale(0.7) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(1.0) rotate(360deg);
+    }
+}

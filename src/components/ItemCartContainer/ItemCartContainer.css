@@ -77,6 +77,21 @@
     width: 8rem;
 }
 
+.totalCart {
+    margin-top: .5rem;
+    display: block;
+    background-color: #080808;
+    text-align: end;
+}
+
+.totalTitle {
+    display: inline;
+    padding: .3rem;
+    border-bottom: 2px solid #019b01;
+    border-radius: 5px;
+
+}
+
 .clearCart {
     display: block;
     background-color: #080808;
@@ -116,3 +131,13 @@
     margin-top: 2rem;
 }
 
+.cartVacio a {
+    background-color: #080808;
+    margin: 0 10px;
+    transition: all .5s;
+}
+
+.cartVacio a:hover {
+    color: #019b01;
+    font-size: 25px;
+}

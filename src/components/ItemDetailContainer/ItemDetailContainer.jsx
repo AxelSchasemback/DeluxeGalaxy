@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react'
 import Search from '../Search/Search';
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
+import { Loading } from '../Loading/Loading';
 import './ItemDetailContainer.css'
 
 export const ItemDetailContainer = () => {
@@ -21,31 +22,40 @@ export const ItemDetailContainer = () => {
 
 
     const [productos, setProductos] = useState({})
+    const [load, setLoad] = useState(true)
+        setTimeout(() => setLoad(false), 1500)
+    
+    
     useEffect(() => {
 
         consultPromise(true)
 
-        
+
         fetch("../json/data.json")
-        .then((res) => res.json())
-        
-        .then((data) => {
-            data = data.productos
-            setProductos(data.find((producto) => producto.id === Number(id)))
-        })
-        
-        
-        .catch((error) => console.error(error))
-        
-        
+            .then((res) => res.json())
+
+            .then((data) => {
+                data = data.productos
+                setProductos(data.find((producto) => producto.id === Number(id)))
+            })
+
+
+            .catch((error) => console.error(error))
+
+
     }, [id])
-    
+
+
+
     return (
-        <main className='mainContainerDetail'>
-            <Search searchProd="Buscar Producto" />
-            <div className='divContent'>
-                <ItemDetail producto={productos} />
-            </div>
-        </main>
+        <>
+            <main className='mainContainerDetail'>
+                <Search searchProd="Buscar Producto" />
+                {load ? <Loading /> :
+                    <div className='divContent'>
+                        <ItemDetail producto={productos} />
+                    </div>}
+            </main>
+        </>
     )
 }
