@@ -11,7 +11,7 @@ export const CartWidget = () => {
 
     return (
         <>
-        <Link className='linkCart' to='/cart'>
+        <Link className={cantTotal() > 0 ? 'linkCart' : 'linkNone'} to='/cart'>
             <div className='cartContent'>
                 <AiOutlineShoppingCart className='cart' />
                 <span className='cartCant'>{cantTotal()}</span>

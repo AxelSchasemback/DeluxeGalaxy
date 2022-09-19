@@ -12,7 +12,7 @@ export const ItemCart = ({ productos }) => {
 
     return (
         <tr className='cardCart' key={id}>
-            <div className='tableData'>
+            <div className='tableData show'>
                 <td className='tdProducto'>
                     <img src={img} alt="imagenPrueba" className="imgCardCart" />
                     <span className='titleCardCart'>{marca} {name} </span>
@@ -26,7 +26,7 @@ export const ItemCart = ({ productos }) => {
                 <td className='tdSubTotal'>
                     <span className='subTotal'> ${totalSuma}</span>
                 </td>
-                <button className='quitarProducto show' onClick={(() => removeItem(id))}>x</button>
+                <button className='show quitarProducto' onClick={(() => removeItem(id))}>x</button>
             </div>
         </tr>
     )

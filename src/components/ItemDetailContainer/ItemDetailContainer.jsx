@@ -1,51 +1,25 @@
 import { React, useState, useEffect } from 'react'
 import Search from '../Search/Search';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { Loading } from '../Loading/Loading';
 import './ItemDetailContainer.css'
 
 export const ItemDetailContainer = () => {
-
-    const { id } = useParams()
-
-    function consultPromise(confirm) {
-        return new Promise((res, rej) => {
-            if (confirm) {
-                res(productos)
-            } else {
-                rej("reject")
-            }
-
-        })
-    }
-
-
+ 
     const [productos, setProductos] = useState({})
     const [load, setLoad] = useState(true)
-        setTimeout(() => setLoad(false), 1500)
+    setTimeout(() => setLoad(false), 1500)
     
+    const { id } = useParams()
     
     useEffect(() => {
-
-        consultPromise(true)
-
-
-        fetch("../json/data.json")
-            .then((res) => res.json())
-
-            .then((data) => {
-                data = data.productos
-                setProductos(data.find((producto) => producto.id === Number(id)))
-            })
-
-
-            .catch((error) => console.error(error))
-
-
+        const productdb = getFirestore()
+        const prodcuctDoc = doc(productdb, 'productos', id)
+        getDoc(prodcuctDoc)
+        .then((res) => setProductos({ id:res.id, ...res.data()}))
     }, [id])
-
-
 
     return (
         <>

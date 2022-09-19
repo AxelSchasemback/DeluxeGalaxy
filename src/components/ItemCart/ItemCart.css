@@ -6,22 +6,8 @@
     transition: .3s all;
 }
 
-.tableData {
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: space-around;
-    height: 5rem;
-}
-
-.imgCardCart {
-    width: 4rem;
-    height: 4rem;
-    transition: all .5s;
-}
-
-.imgCardCart:hover {
-    transform: scale(1.05);
+.show {
+    display: none;
 }
 
 .quitarProducto {
@@ -36,11 +22,34 @@
     border: 2px solid #101010;
 }
 
+.show:hover {
+    display: flex;
+}
+
+.tableData {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    height: 5rem;
+}
+
 .quitarProducto:hover {
+    display: block;
     transform: scale(1.05);
     background-color: #a30707;
 }
 
+
+.imgCardCart {
+    width: 4rem;
+    height: 4rem;
+    transition: all .5s;
+}
+
+.imgCardCart:hover {
+    transform: scale(1.05);
+}
 
 .namePriceCart {
     height: 3.5rem;

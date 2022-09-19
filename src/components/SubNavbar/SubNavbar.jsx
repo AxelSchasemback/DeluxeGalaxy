@@ -15,11 +15,8 @@ export const SubNavbar = () => {
             <Link to="/category/Xiaomi">
                 <span>Xiaomi</span>
             </Link>
-            <Link to="/category/Apple">
-                <span>Apple</span>
-            </Link>
-            <Link to="/category/Huawei">
-                <span>Huawei</span>
+            <Link to="/category/ZTE">
+                <span>ZTE</span>
             </Link>
             <Link to="/category/TCL">
                 <span>TCL</span>

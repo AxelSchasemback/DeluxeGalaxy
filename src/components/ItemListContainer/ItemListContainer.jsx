@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react'
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore'
 import { useParams } from 'react-router-dom';
 import { ItemList } from '../ItemList/ItemList'
 import Search from '../Search/Search';
@@ -16,38 +17,20 @@ export const ItemListContainer = () => {
     const { marca } = useParams()
 
     useEffect(() => {
-        consultPromise(true)
-        fetch("./json/data.JSON")
-            .then((res) => res.json())
-            .then((data) => {
-                data = data.productos
-                setProductos(data)
-            })
-            .catch((error) => console.error(error))
-
-    }, [])
-
-    const getCategory = () => new Promise((res, rej) => {
-        setProductoCategoria(productos.filter((buscar) => buscar.marca === marca))
-
-    })
-
-    useEffect(() => {
-        getCategory()
-            .then((producto) => setProductoCategoria(producto))
-            .catch((error) => console.error(error))
+        const db = getFirestore()
+        const itemCollection = collection(db, "productos");
+        if (marca) {
+            const productFilter = query(itemCollection, where('marca', '==', marca))
+            getDocs(productFilter)
+                .then((res) => setProductoCategoria(res.docs.map((product) => ({ id: product.id, ...product.data() }))))
+                .catch((error) => console.error(error))
+        }
+        else {
+            getDocs(itemCollection)
+                .then((res) => setProductos(res.docs.map((product) => ({ id: product.id, ...product.data() }))))
+                .catch((error) => console.error(error))
+        }
     }, [marca])
-
-    function consultPromise(confirm) {
-        return new Promise((res, rej) => {
-            if (confirm) {
-                res(productos)
-            } else {
-                rej("reject")
-            }
-
-        })
-    }
 
     return (
 
