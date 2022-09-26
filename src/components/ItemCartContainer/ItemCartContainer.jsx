@@ -47,7 +47,9 @@ export const ItemCartContainer = () => {
                 </tr>
                 <div className='buttonContext'>
                   <button className='clearCart' onClick={(() => clear())}> Vaciar Carrito</button>
-                  <button className='buyCart' onClick={(() => clear())}> Comprar</button>
+                  <Link className='check' to="/checkout">
+                    <button className='buyCart'> Comprar</button>
+                  </Link>
                 </div>
               </table>
               :

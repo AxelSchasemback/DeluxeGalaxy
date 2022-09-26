@@ -105,6 +105,11 @@
     transform: scale(1.06);
 }
 
+.check {
+    background-color: #080808;
+    text-decoration: none;
+}
+
 .buyCart {
     display: block;
     background-color: #080808;
@@ -134,10 +139,10 @@
 .cartVacio a {
     background-color: #080808;
     margin: 0 10px;
-    transition: all .5s;
+    transition: all .1s;
 }
 
 .cartVacio a:hover {
     color: #019b01;
-    font-size: 25px;
+    font-size: 24.3px;
 }

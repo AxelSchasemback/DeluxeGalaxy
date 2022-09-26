@@ -10,7 +10,7 @@ export const Item = ({item}) => {
             <div className='allCards'>
                 <div className='card'>
                     <Link className='link' to={`/detail/${item.id}`}>
-                    <img src={item.img} alt="imagenPrueba" className="imgCard" />
+                    <img src={item.imgP} alt="imagenPrueba" className="imgCard" />
                     <button className='verProducto'>Ver Producto</button>
                     </Link>
                     <div className='namePrice'>

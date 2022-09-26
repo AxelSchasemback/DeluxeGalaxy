@@ -1,10 +1,11 @@
 import { React, useState, useEffect } from 'react'
 import Search from '../Search/Search';
-import { getFirestore, doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { Loading } from '../Loading/Loading';
 import './ItemDetailContainer.css'
+import db from '../../Firebase/firebase';
 
 export const ItemDetailContainer = () => {
  
@@ -14,11 +15,15 @@ export const ItemDetailContainer = () => {
     
     const { id } = useParams()
     
+    const getSelected = async (id) => {
+        const prodcuctDoc = doc(db, 'Items', id)
+        const res = await getDoc(prodcuctDoc)
+        const result = { id: res.id, ...res.data()}
+        setProductos(result)
+    } 
+    
     useEffect(() => {
-        const productdb = getFirestore()
-        const prodcuctDoc = doc(productdb, 'productos', id)
-        getDoc(prodcuctDoc)
-        .then((res) => setProductos({ id:res.id, ...res.data()}))
+        getSelected(id)
     }, [id])
 
     return (

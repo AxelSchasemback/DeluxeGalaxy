@@ -16,18 +16,56 @@
     margin-top: 2rem;
     width: 52rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.imagenContainer {
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    background-color: #08080800;
 }
 
 .imagenDetail {
-    background-color: #080808;
+    background-color: #08080800;
     width: 20rem;
     height: 20rem;
     transition: all 1s;
 }
 
-.imagenDetail:hover {
+img:hover {
     transform: scale(1.1);
+}
+
+.imagen0 {
+    background-color: #080808;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.imagen1 {
+    background-color: #080808;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.imagen2 {
+    background-color: #080808;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.imagen3 {
+    background-color: #080808;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
 }
 
 .containerDescripcion {
@@ -51,6 +89,7 @@
     margin-top: 2rem;
     font-size: 20px;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 .buy {

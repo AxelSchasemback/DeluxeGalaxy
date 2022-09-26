@@ -8,7 +8,7 @@ import { useCartContext } from '../../context/CartContext'
 export const CartWidget = () => {
 
     const { cantTotal } = useCartContext()
-
+    
     return (
         <>
         <Link className={cantTotal() > 0 ? 'linkCart' : 'linkNone'} to='/cart'>
