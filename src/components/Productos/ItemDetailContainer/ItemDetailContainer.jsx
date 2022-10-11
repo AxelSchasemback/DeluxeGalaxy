@@ -1,11 +1,10 @@
 import { React, useState, useEffect } from 'react'
-import Search from '../Search/Search';
 import { doc, getDoc } from 'firebase/firestore';
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
-import { Loading } from '../Loading/Loading';
+import { Loading } from '../../Utils/Loading/Loading';
 import './ItemDetailContainer.css'
-import db from '../../Firebase/firebase';
+import db from '../../../Firebase/firebase';
 
 export const ItemDetailContainer = () => {
  
@@ -29,7 +28,6 @@ export const ItemDetailContainer = () => {
     return (
         <>
             <main className='mainContainerDetail'>
-                <Search searchProd="Buscar Producto" />
                 {load ? <Loading /> :
                     <div className='divContent'>
                         <ItemDetail producto={productos} />

@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import './ItemCartContainer.css'
-import Search from '../Search/Search'
 import { ItemCart } from '../ItemCart/ItemCart'
-import { Loading } from '../Loading/Loading'
-import { useCartContext } from '../../context/CartContext'
+import { Loading } from '../../Utils/Loading/Loading'
+import { useCartContext } from '../../../context/CartContext'
 import { Link } from 'react-router-dom'
 
 export const ItemCartContainer = () => {
@@ -14,7 +13,6 @@ export const ItemCartContainer = () => {
 
   return (
     <main className='mainContainerCart'>
-      <Search searchProd="Buscar Producto" />
       {load ? <Loading />
         :
         <div className='divContentCart'>

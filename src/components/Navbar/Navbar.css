@@ -1,4 +1,3 @@
-
 .containerNav {
     grid-area: nav;
 }
@@ -54,4 +53,12 @@
 
 .linkHome {
     text-decoration: none;
+}
+
+.iconsNav {
+    display: flex;
+    width: 8rem;
+    background-color: #0c0c0c;
+    justify-content: space-between;
+    align-items: center;
 }

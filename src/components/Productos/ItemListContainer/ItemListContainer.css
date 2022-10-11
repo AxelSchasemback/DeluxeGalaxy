@@ -1,12 +1,3 @@
-.container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-areas:
-        "nav nav nav nav"
-        "... main main ..."
-        "footer footer footer footer";
-}
-
 .mainContainer {
     display: flex;
     flex-direction: column;
@@ -18,7 +9,7 @@
 .titleProduct {
     text-align: center;
     background-color: #080808;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .divContent {

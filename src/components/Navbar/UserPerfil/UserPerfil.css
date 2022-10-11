@@ -1,0 +1,63 @@
+.perfil {
+    background-color: #0c0c0c;
+    width: 2.5rem;
+    height: 1.5rem;
+    padding: 0.1rem;
+    border: 1px outset #000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.perfil:hover {
+    transform: scale(1.02);
+    background-color: rgb(19, 19, 19);
+}
+
+.userIcon {
+    width: 2.2rem;
+    background-color: transparent;
+    height: 1.2rem;
+    margin: auto;
+    display: block;
+    padding-top: 0.1rem;
+}
+
+.linkLogout {
+    text-decoration: none;
+    position: absolute;
+    top: 1.5rem;
+    width: 2.5rem;
+    padding: 2px 2px;
+    top: 2rem;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgb(193 81 81);
+    color: #000;
+    background-image: radial-gradient(#7c3b3b, #a54c4c, #9d3333, #810000);
+}
+
+.linkLogout:hover {
+    color: white;
+}
+
+.linkLogin {
+    text-decoration: none;
+    position: absolute;
+    top: 1.5rem;
+    width: 2.5rem;
+    padding: 2px 2px;
+    top: 2rem;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgb(64, 216, 89);
+    color: #000;
+    background-image: radial-gradient(#368543, #368543, #368543, #008111);
+}
+
+.linkLogin:hover {
+    color: white;
+}
+
+.linkNone {
+    display: none;
+}

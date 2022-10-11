@@ -2,11 +2,10 @@ import { React, useState, useEffect } from 'react'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { useParams } from 'react-router-dom';
 import { ItemList } from '../ItemList/ItemList'
-import Search from '../Search/Search';
-import { Loading } from '../Loading/Loading';
+import { Loading } from '../../Utils/Loading/Loading';
 import './ItemListContainer.css'
-import { SubNavbar } from '../SubNavbar/SubNavbar';
-import db from '../../Firebase/firebase';
+import { Category } from '../Category/Category';
+import db from '../../../Firebase/firebase';
 
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
@@ -27,18 +26,18 @@ export const ItemListContainer = () => {
     }, [marca])
 
     return (
-
-        <main className='mainContainer'>
-            <Search product={productos} />
-            {load ? <Loading /> :
-                <>
-                    <h1 className='titleProduct'>Productos</h1>
-                    <div className='divContent'>
-                        <SubNavbar categoria={productos} />
-                        <ItemList list={productos} />
-                    </div>
-                </>
-            }
-        </main>
+        <>
+            <main className='mainContainer'>
+                {load ? <Loading /> :
+                    <>
+                        <h1 className='titleProduct'>Productos</h1>
+                        <div className='divContent'>
+                            <Category categoria={productos} />
+                            <ItemList list={productos} />
+                        </div>
+                    </>
+                }
+            </main>
+        </>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
-import './SubNavbar.css'
+import './Category.css'
 import { Link } from 'react-router-dom'
 
-export const SubNavbar = () => {
+export const Category = () => {
 
     return (
         <div className='category'>

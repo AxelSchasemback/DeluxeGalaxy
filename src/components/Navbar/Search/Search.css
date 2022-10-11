@@ -1,5 +1,28 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #080808;
+    height: 100vh;
+    grid-area: main;
+}
+
+.titleProduct {
+    text-align: center;
+    background-color: #080808;
+    margin-top: 2rem;
+}
+
+.divContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #080808;
+    justify-content: center;
+}
+
 .searchContent {
     display: flex;
+    height: 2rem;
     justify-content: center;
     background-color: #080808;
     grid-area: main;
@@ -17,7 +40,6 @@
 .search-input {
     position: absolute;
     width: 10rem;
-    height: 1.5rem;
     padding: 0.2rem;
     font-size: 20px;
     border: 3px solid #181818;;
@@ -25,6 +47,5 @@
 }
 
 .search-input:focus {
-    margin-top: 3px;
     border-top: none;
 }

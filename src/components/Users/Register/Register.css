@@ -1,0 +1,163 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #080808;
+    height: 100vh;
+    grid-area: main;
+}
+
+.containerRegister {
+    display: block;
+    background-color: #080808;
+    height: 25rem;
+}
+
+.errorAlert {
+    width: 13rem;
+    text-align: center;
+    height: 1.1rem;
+    vertical-align: middle;
+    padding-top: 10px;
+    color: #480000;
+    border: 3px outset#950d0d;
+    background-color: #f14242;
+    font-size: 18px;
+}
+
+.titleRegister {
+    background-color: #101010;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.containerForm {
+    display: flex;
+    height: 20rem;
+    background-color: #080808;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.containerForm label {
+    margin-bottom: 0.2rem;
+    background-color: #101010;
+}
+
+label input {
+    border: none;
+    background-color: #181818;
+    font-size: 18px;
+    padding: 6px 8px;
+    margin-top: 0.2rem;
+}
+
+.inputsForm2 {
+    border: 2px #004700 outset;
+    width: 14rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    border-bottom: transparent;
+}
+
+.formInput {
+    font-size: 18px;
+}
+
+label p {
+    font-size: 18px;
+}
+
+.registrate {
+    display: block;
+    margin-top: 0.5rem;
+    width: 5rem;
+    padding: 2px;
+    font-size: 18px;
+    border: 2px outset #7e7e7e;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.registrate:hover {
+    transform: scale(1.05);
+    border: 2px outset #3d3d3d;
+}
+
+.buttonsForm {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.linkLoginAccount {
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.linkLoginAccount p {
+    font-size: 12px;
+    display: block;
+    transition: all .5s;
+}
+
+.linkLoginAccount:hover {
+    transform: scale(1.04);
+}
+
+.linkLoginAccount p:hover {
+    text-decoration: underline;
+}
+
+.contGoogle {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 14rem;
+    text-align: center;
+    justify-content: center;
+    border: 2px #004700 outset;
+    border-top: transparent;
+}
+
+.buttonGoogle {
+    width: 4rem;
+    margin-bottom: 0.2rem;
+    padding: 2px;
+    margin-top: 0.2rem;
+    position: relative;
+    border-radius: 12px;
+    background-color: #00000061;
+}
+
+.buttonGoogle:hover {
+    transform: scale(1.05);
+}
+
+.iconGoogle {
+    font-size: 50px;
+    position: absolute;
+    background-color: transparent;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 0;
+    bottom: 5px;
+    top: -25px;
+}
+
+.googleLogin {
+    font-size: 12px;
+    position: relative;
+    z-index: 100;
+    background-color: #00000054;
+}
