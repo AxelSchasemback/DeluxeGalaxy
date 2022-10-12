@@ -1,16 +1,7 @@
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #080808;
-    height: 100%;
-    grid-area: main;
-    padding-bottom: 3rem;
-}
-
-.containerRegister {
+.containerRegister2 {
     display: block;
     background-color: #080808;
-    height: 25rem;
+    height: 30rem;
 }
 
 .errorAlert {
@@ -32,9 +23,9 @@
     margin-top: 2rem;
 }
 
-.containerForm {
+.containerForm2 {
     display: flex;
-    height: 0rem;
+    height: 24rem;
     background-color: #080808;
     flex-direction: column;
     justify-content: flex-end;

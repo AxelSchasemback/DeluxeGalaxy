@@ -4,7 +4,7 @@
 
 
 ```
-## *Info*
+ $ Informacion
 ```
 * React
 * JavaScript
@@ -13,4 +13,8 @@
 * Iconos: *React-Icons*
 * Backend: *Firebase*
 
-## Gif
+## Gifs
+
+* [Visualizacion de Productos](https://drive.google.com/file/d/1Bhip7eAsKcbDrFx9LHgsZSSxgGg20Gg7/view?usp=sharing)
+* [Detalle del Producto](https://drive.google.com/file/d/1nb9vV9Sh87S8_zuhS6udv7zQVq4WVMJX/view?usp=sharing)
+* [Simulaicon de Compra](https://drive.google.com/file/d/12TZ5VPEsPtFhugphwFoTXu-NpmfbuMuD/view?usp=sharing)

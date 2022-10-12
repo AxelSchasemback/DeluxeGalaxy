@@ -1,11 +1,3 @@
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #080808;
-    height: 100vh;
-    grid-area: main;
-}
-
 .containerRegister {
     display: block;
     background-color: #080808;
@@ -30,7 +22,7 @@
 
 .containerForm {
     display: flex;
-    height: 0rem;
+    height: 18rem;
     background-color: #080808;
     flex-direction: column;
     justify-content: flex-end;

@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .tituloDetail {
@@ -74,7 +75,6 @@ img:hover {
     flex-direction: column;
     align-items: center;
     width: 20rem;
-    height: 28rem;
     justify-content: flex-start;
 }
 

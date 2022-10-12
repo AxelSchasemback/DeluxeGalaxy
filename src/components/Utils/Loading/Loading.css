@@ -1,5 +1,7 @@
 .contLoad {
     display: flex;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
     position: relative;
     width: 3rem;
     height: 3rem;

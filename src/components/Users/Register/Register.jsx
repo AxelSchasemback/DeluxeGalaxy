@@ -50,8 +50,8 @@ export const Register = () => {
             <Search searchProd="Buscar Producto" />
             {load ? <Loading />
                 :
-                <div className='containerRegister'>
-                    <form onSubmit={handleSubmit} className='containerForm'>
+                <div className='containerRegister2'>
+                    <form onSubmit={handleSubmit} className='containerForm2'>
                         {error && <p className='errorAlert'>{error}</p>}
                         <div className='inputsForm2'>
                             <h1 className='titleRegister'>registrate</h1>
