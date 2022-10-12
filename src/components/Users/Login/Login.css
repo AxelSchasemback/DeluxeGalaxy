@@ -30,7 +30,7 @@
 
 .containerForm {
     display: flex;
-    height: 20rem;
+    height: 0rem;
     background-color: #080808;
     flex-direction: column;
     justify-content: flex-end;

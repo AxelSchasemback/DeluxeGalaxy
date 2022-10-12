@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: #080808;
-    height: 100vh;
+    height: 100%;
     grid-area: main;
+    padding-bottom: 3rem;
 }
 
 .containerRegister {
@@ -33,7 +34,7 @@
 
 .containerForm {
     display: flex;
-    height: 20rem;
+    height: 0rem;
     background-color: #080808;
     flex-direction: column;
     justify-content: flex-end;
@@ -121,6 +122,8 @@ label p {
     margin: auto;
     display: flex;
     align-content: center;
+    height: 3rem;
+    padding-top: 1rem;
     align-items: center;
     width: 14rem;
     text-align: center;

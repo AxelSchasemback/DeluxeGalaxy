@@ -1,0 +1,94 @@
+.containerFooter {
+    grid-area: footer;
+    display: flex;
+    background-color: #080808;
+    justify-content: space-evenly;
+    border-top: 2px #004700 outset;
+    padding-bottom: 1rem;
+}
+
+.categoryFt {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    align-items: center;
+    background-color: #080808;
+    align-content: center;
+}
+
+.categoryFt a {
+    text-decoration: none;
+    background-color: #080808;
+}
+
+.categoryFt a:hover {
+    transform: scale(1.02);
+}
+
+.categoryFt a span {
+    font-size: 12px;
+}
+
+.categoryFt a span:hover {
+    color: #345e34;
+}
+
+.nosotrosFt {
+    width: 12rem;
+    display: flex;
+    padding: 1.5rem 0;
+    height: 6.5rem;
+    flex-direction: column;
+    background-color: #080808;
+    justify-content: space-evenly;
+}
+
+.nosotrosFt h2 {
+    font-size: 20px;
+}
+
+.parrafoNosotros {
+    font-size: 14px;
+    background-color: #080808;
+    letter-spacing: .5px;
+}
+
+.contactoFt {
+    width: 10.5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #080808;
+    justify-content: space-around;
+}
+
+.contactoFt h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactoFt p {
+    font-size: 15px;
+    background-color: #080808;
+}
+
+.redesFt {
+    background-color: #080808;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.redesFt a {
+    text-decoration: none;
+    background-color: #080808;
+}
+
+.redesFt a:hover {
+    transform: scale(1.05);
+}
+
+.redesFt a svg {
+    margin-right: 1rem;
+    font-size: 32px;
+    background-color: #080808;
+}

@@ -13,7 +13,7 @@ function Navbar() {
         <header className='header'>
           <nav className="nav-bar">
             <Link className='linkHome' to="/Home">
-              <span className="logo">Deluxe.Arg</span>
+              <span className="logo">DeluxeGalaxy.</span>
             </Link>
             <div>
               <ul className="seccion">
