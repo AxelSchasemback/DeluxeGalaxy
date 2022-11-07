@@ -8,20 +8,20 @@ import db from '../../../Firebase/firebase';
 
 export const ItemDetailContainer = () => {
  
-    const [productos, setProductos] = useState({})
-    const [load, setLoad] = useState(true)
+    const [productos, setProductos] = useState({})     //guardamos el producto traido
+    const [load, setLoad] = useState(true)             //simulacion de Loading
     setTimeout(() => setLoad(false), 1500)
     
     const { id } = useParams()
     
-    const getSelected = async (id) => {
-        const prodcuctDoc = doc(db, 'Items', id)
+    const getSelected = async (id) => {             //la id traida por el useParams
+        const prodcuctDoc = doc(db, 'Items', id)    //llamada a la bbd en la coleccion de Items(productos), buscamos la id del producto y lo traemos
         const res = await getDoc(prodcuctDoc)
         const result = { id: res.id, ...res.data()}
         setProductos(result)
     } 
     
-    useEffect(() => {
+    useEffect(() => {                               
         getSelected(id)
     }, [id])
 

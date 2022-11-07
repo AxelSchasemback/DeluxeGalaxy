@@ -10,9 +10,9 @@ export const Checkout = () => {
 
     const navegacion = useNavigate()
 
-    const { user } = useAuth()
+    const { user } = useAuth()                                               
     const { cart, totalProducts, clear } = useCartContext()
-    const [userId, setUserId] = useState()
+    const [userId, setUserId] = useState()                       //declaramos estados//
     const [buyer, setBuyer] = useState({
         Nombre: `${user.displayName || ''}`,
         Email: `${user.email}`,
@@ -24,13 +24,13 @@ export const Checkout = () => {
     const handleInputChange = (e) => {
         setBuyer(({
             ...buyer,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value                    //Guardamos los datos del usuario en el estado Buyer
         }))
     }
 
     const generateOrder = async (data) => {
         try {
-            const col = collection(db, "order")
+            const col = collection(db, "order")              //llamada a la bbd a la colleccion order para crear las ordenes de compra realizada por el usuario
             const order = await addDoc(col, data)
             setUserId(order.id)
             clear()

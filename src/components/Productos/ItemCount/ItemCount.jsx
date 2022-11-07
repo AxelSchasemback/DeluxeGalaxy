@@ -2,9 +2,11 @@ import { React, useState } from 'react'
 import './ItemCount.css'
 
 export const ItemCount = ({ stock, precio, boton }) => {
+    //depenediendo la cantidad del stock del producto vamos a poder sumar o restar la cantidad de Count
+
     const [count, setCount] = useState(1)
 
-
+    // count no puede ser menor ni mayor al stock asignado al producto
     const addCant = () => {
         if (count < stock) { setCount(count + 1) }
     }
@@ -12,7 +14,6 @@ export const ItemCount = ({ stock, precio, boton }) => {
     const remCant = () => {
         if (count > 1) { setCount(count - 1) }
     }
-
 
     return (
         <div className='itemCount-container'>

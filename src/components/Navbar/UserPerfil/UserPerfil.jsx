@@ -7,20 +7,22 @@ import { useCartContext } from '../../../context/CartContext'
 
 export const UserPerfil = () => {
 
-  const navigate = useNavigate()
-  const { user, logOut } = useAuth()
-  const { clear } = useCartContext()
-  const [log, setLog] = useState(false)
-  const logClick = () => {
+  const navigate = useNavigate()                   //funcion de navegacion de pagina
+  const { user, logOut } = useAuth()              //traemos funciones del context Auth
+  const { clear } = useCartContext()               //funcion para borrar carrito del cartcontext
+  const [log, setLog] = useState(false)           //se guarda el estado del boton
+  const logClick = () => {                        //pequea funcion para cambiar el estado log a True por 5 segundos
     setLog(true)
     setTimeout(() => setLog(false), 5000)
   }
-const handleLogout = async() => {
-  await logOut()
+const handleLogout = async() => {               //funcion para cerrar sesion del usuario, vaciar el carrito y redireccionarlo para iniciar sesion
+  await logOut()                  
   clear()
   navigate('/login')
 }
 
+
+//Se ejecuta el ternario dependiendo si inicion sesion el usuario o no
   return (
     <>
       <button className='perfil' onClick={(() => logClick())}>

@@ -7,7 +7,7 @@ import { useCartContext } from '../../../context/CartContext'
 
 export const CartWidget = () => {
 
-    const { cantTotal } = useCartContext()
+    const { cantTotal } = useCartContext()    //traemos cantidad total de todos los productos agregados al carrito el context
     
     return (
         <>

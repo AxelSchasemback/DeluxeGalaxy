@@ -5,25 +5,27 @@ import { useCartContext } from '../../../context/CartContext'
 import "./ItemDetail.css"
 
 export const ItemDetail = ({ producto }) => {
+
+    //Desestructuramos el producto con los detalles
     const { nombre, marca, precio, id, descripcion, imgP, img1, img2, img3, stock } = producto
 
-    const [goCart, setGoCart] = useState(false)
-    const [imagen, setImagen] = useState(imgP)
+    const [goCart, setGoCart] = useState(false)   //estado para uso del booleano verdadero y falso
+    const [imagen, setImagen] = useState(imgP)  
 
-    const selectedImg = (img) => {
+    const selectedImg = (img) => {              // Funcion para establecer la imagen principal de la pagina
         setImagen(img)
     }
 
     const { addItem } = useCartContext();
 
 
-    const onAdd = (quantity) => {
+    const onAdd = (quantity) => {              //Agregar producto al carrito
         setGoCart(true)
         addItem(marca, nombre, id, precio, imgP, quantity)
     }
 
 
-
+    //una vez Finalizada la compra del producto, desaparece <ItemCount> y aparece boton para ir al carrito
     return (
         <>
             <div className='containerDetail'>

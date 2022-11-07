@@ -4,7 +4,7 @@
 
 
 ```
- $ Informacion
+ Informacion
 ```
 * React
 * JavaScript

@@ -28,8 +28,6 @@ export const AuthProvider = ({ children }) => {
             setUser(currentUser)
         })
     }, [])
-    
-    console.log(user)
 
     return (
         <authContext.Provider

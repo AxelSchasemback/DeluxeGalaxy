@@ -8,9 +8,11 @@ import { Link } from 'react-router-dom'
 export const ItemCartContainer = () => {
 
   const [load, setLoad] = useState(true)
-  setTimeout(() => setLoad(false), 1500)
-  const { cart, clear, totalProducts } = useCartContext()
+  setTimeout(() => setLoad(false), 1500)                         //simulacion de Loading
+  const { cart, clear, totalProducts } = useCartContext()       //traemos funciones de CartContext
 
+
+  //Se ejecuta el ternario dependiendo si hay por lo menos un producto agregado al carrito
   return (
     <main className='mainContainerCart'>
       {load ? <Loading />

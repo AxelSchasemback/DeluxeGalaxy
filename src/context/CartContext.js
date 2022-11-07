@@ -19,8 +19,6 @@ const CartProvider = ({ children }) => {
         }
     }
 
-    console.log(cart)
-
     const clear = () => setCart([])
 
     const isInCart = (id) => cart.find(product => product.id === id)

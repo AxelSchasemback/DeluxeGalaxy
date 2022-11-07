@@ -4,12 +4,14 @@ import { useCartContext } from '../../../context/CartContext'
 
 export const ItemCart = ({ productos }) => {
 
-    const { name, marca, cant, id, imgP, precio } = productos
+    const { name, marca, cant, id, imgP, precio } = productos     //desestructuramos productos
 
     const { removeItem } = useCartContext()
 
     const totalSuma = precio * cant
 
+    //Creamos las cards
+    
     return (
         <tr className='cardCart' key={id}>
             <div className='tableData show'>
