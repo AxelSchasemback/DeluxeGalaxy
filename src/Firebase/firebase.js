@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB0RTRYzXRyyZgGut5jifrnwvM9-NF12Sw",
+  apiKey: "",
   authDomain: "deluxegalaxyios.firebaseapp.com",
   projectId: "deluxegalaxyios",
   storageBucket: "deluxegalaxyios.appspot.com",
-  messagingSenderId: "747712358073",
-  appId: "1:747712358073:web:94f36c5e348264b4e11d68",
-  measurementId: "G-NCD9TJTBDV"
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 // Initialize Firebase
